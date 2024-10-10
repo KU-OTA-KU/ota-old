@@ -1,0 +1,137 @@
+.animes-related {
+ width: 100%;
+}
+
+.animes-related .animes-related-inner {
+ width: 100%;
+ padding: 0 10px;
+}
+
+.animes-related-inner .animes-related-tit {
+ max-width: 1300px;
+ width: 100%;
+ margin: 0 auto;
+}
+
+.related-animes-container {
+ width: 100%;
+ display: grid;
+ grid-template-columns: repeat(6, minmax(100px, 1fr));
+ gap: 10px;
+ position: relative;
+}
+
+.related-animes-container .related-animes-block {
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+ /*min-width: 200px;*/
+ max-width: 200px;
+ width: 100%;
+}
+
+.related-animes-list-title {
+ margin-bottom: 5px;
+}
+
+.related-animes-list-title h6 {
+ font-weight: normal;
+ color: var(--related-anime-title-h6-color);
+}
+
+.related-animes-container .related-animes-block .related-animes-name {
+ font-size: 1em;
+ max-width: 200px;
+ text-decoration: underline;
+ text-align: left;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ height: 17px !important;
+ border-radius: 5px;
+ background: var(--related-anime-content-name-background-color);
+}
+
+
+.related-animes-container .related-animes-block .related-animes-name a {
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+.related-animes-container .related-animes-block .related-animes-info {
+ display: flex;
+ gap: 5px;
+}
+
+.related-animes-info .related-animes-info-image {
+ width: 40%;
+ aspect-ratio: 1 / 1.5;
+ background: var(--related-anime-content-image-background-color);
+ border-radius: 5px;
+ position: relative;
+ overflow: hidden;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+
+.related-animes-info .related-animes-info-image img {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+}
+
+.related-animes-type-year {
+ width: 70%;
+}
+
+.related-animes-type-year p {
+ margin-bottom: 5px;
+ font-size: 0.8em;
+ text-align: left;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ display: flex;
+ height: 17px !important;
+ border-radius: 5px;
+ background: var(--related-anime-content-type-and-year-background-color);
+ align-items: center;
+}
+
+@media screen and (max-width: 1210px) {
+ .related-animes-container {
+  grid-template-columns: repeat(5, minmax(100px, 1fr)) !important;
+ }
+}
+
+@media screen and (max-width: 1024px) {
+ .related-animes-container {
+  grid-template-columns: repeat(4, minmax(100px, 1fr)) !important;
+ }
+}
+
+@media screen and (max-width: 768px) {
+ .related-animes-container {
+  grid-template-columns: repeat(3, minmax(100px, 1fr)) !important;
+ }
+}
+
+
+@media screen and (max-width: 470px) {
+ .related-animes-container {
+  grid-template-columns: repeat(2, minmax(100px, 1fr)) !important;
+ }
+}
+
+@media screen and (max-width: 425px) {
+ .related-animes-list-title h2 {
+  display: none;
+ }
+
+ .related-animes-list-title h6 {
+  text-align: center;
+ }
+}

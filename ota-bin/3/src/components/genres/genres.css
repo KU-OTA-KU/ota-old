@@ -1,0 +1,67 @@
+.all-genres {
+ width: 100%;
+}
+
+.all-genres .all-genres-list-inner {
+ width: 100%;
+ padding: 0 10px;
+}
+
+.all-genres .flickity-viewport {
+ height: 37px !important;
+}
+
+
+.is-dragging .genre-cont {
+ pointer-events: none;
+}
+
+.all-genres-list-inner .all-genres-list-tit {
+ max-width: 1500px;
+ width: 100%;
+ margin: 0 auto;
+}
+
+.all-genres-list-tit .all-genres-list-container {
+ width: 100%;
+ overflow: hidden;
+ display: flex;
+ flex-direction: row;
+}
+
+.all-genres-list-container::-webkit-scrollbar {
+ height: 0;
+}
+
+.all-genres-list-container .genre-cont {
+ background-color: var(--genres-genres-list-container-background-color);
+ padding: 8px 40px;
+ border-radius: 8px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+ transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+ margin-right: 10px;
+ color: var(--genres-genres-list-container-text-color);
+}
+
+.all-genres-list-container .genre-cont:hover {
+ background-color: var(--genres-genres-list-container-background-hover-color);
+ color: var(--genres-genres-list-container-text-hover-color);
+}
+
+.all-genres-list-container .genre-cont h3 {
+ font-size: 1em;
+}
+
+.all-genres-list-container .genre-cont span {
+ color: var(--status-font-color);
+}
+
+@media screen and (max-width: 425px) {
+ /*.all-genres {*/
+ /*  width: 100%;*/
+ /*  padding: 0;*/
+ /*}*/
+}

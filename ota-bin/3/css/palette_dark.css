@@ -1,0 +1,44 @@
+:root {
+  /* palette */
+  --color-171717: #171717;
+  --color-white: #ffffff;
+  --color-1976d2: #1976d2;
+  --color-121212: #121212;
+  --color-2786e4: #2786e4;
+  --color-222223: #222223;
+  --color-9c142b: #9c142b;
+  --color-gray: rgb(185, 185, 185);
+  --color-1717172b: rgba(255, 255, 255, 0.05);
+  /* body */
+  --body-font-color: #ffffff;
+  --body-background-color: #121212;
+  /* header */
+  --header-background-color: #171717;
+  --header-search-form-button-i-color: #ffffff;
+  --header-user-is-reg-2-button-color: #ffffff;
+  --navigation-a-color: var(--color-white);
+  --nav-button-hov-color: var(--color-1976d2);
+  --user-log-in-1-button-backrogund-color: var(--color-1976d2);
+  --user-log-in-1-button-color: var(--color-white);
+  --user-log-in-1-button-hov-backrogund-color: var(--color-2786e4);
+  --header-search-form-backgorund-color: var(--color-222223);
+  --header-search-form-font-color: var(--color-white);
+  /* filter */
+  --filter-custom-select-background-color: #232323;
+  --filter-custom-select-border-color: rgba(85, 85, 85, 0.2);
+  /* popular */
+  --top-popular-title-h6-color: rgb(185, 185, 185);
+  /* footer */
+  --footer-background-color: #171717;
+  --footer-text-color: rgb(185, 185, 185);
+  /* main */
+  --filter-clear-button-color: var(--color-white);
+  --filter-clear-select-background-color: var(--color-1717172b);
+  --filter-clear-select-option: var(--color-171717);
+  --filter-box-bg-color: var(--color-171717);
+  --status-font-color: var(--color-gray);
+  --filt-button-bg-color: rgba(192, 40, 65, 0.3);
+  --filt-button-bg-hov: rgba(192, 40, 65, 0.8);
+  --tags-checkbox-scrool-thumb: var(--color-9c142b);
+  --filter-bg-color: var(--color-171717);
+}

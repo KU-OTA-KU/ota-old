@@ -1,0 +1,3 @@
+animes(search: "bakemono", limit: 1, kind: "!special") {
+
+animes(sort: "popularity", limit: 10) {

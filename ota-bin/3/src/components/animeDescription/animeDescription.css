@@ -1,0 +1,14 @@
+.anime-description {
+ width: 100%;
+}
+
+.anime-description .anime-description-inner {
+ width: 100%;
+ padding: 0 10px;
+}
+
+.anime-description .anime-description-inner .anime-description-tit {
+ max-width: 1300px;
+ width: 100%;
+ margin: 0 auto;
+}

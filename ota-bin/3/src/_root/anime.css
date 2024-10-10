@@ -1,0 +1,28 @@
+header {
+  background-color: transparent !important;
+  backdrop-filter: blur(7px);
+  position: fixed;
+  box-shadow: none;
+}
+
+.header-search {
+  display: none;
+}
+
+@media screen and (max-width: 630px) {
+  .search {
+      display: none !important;
+  }
+}
+
+.header-navigation {
+  display: none;
+}
+
+.footer-inner-tit {
+  max-width: 1300px !important;
+}
+
+.ban_1-container-tit {
+  max-width: 1300px !important;
+}

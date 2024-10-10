@@ -1,0 +1,115 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+*::after,
+*::before {
+ margin: 0;
+ padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+ ::selection {
+  background: transparent;
+ }
+
+ :active {
+  text-decoration: none !important;
+  outline: none !important;
+ }
+
+ * {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -ms-touch-action: manipulation;
+ }
+}
+
+@font-face {
+ font-family: 'Roboto-regular';
+ src: url('../../assets/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+/* body */
+body {
+ display: flex;
+ gap: 10px;
+ flex-wrap: wrap;
+ flex-direction: column;
+ overflow: hidden;
+ min-height: 100vh;
+ overflow-y: scroll;
+ font-family: "Roboto-regular", sans-serif;
+ font-weight: 400;
+ font-style: normal;
+ font-size: clamp(14px, 2vw, 15px);
+ scroll-behavior: smooth !important;
+ color: var(--body-font-color);
+ background-color: var(--body-background-color);
+}
+
+button {
+ font-size: 1em;
+ font-weight: bold;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+
+p, h1, h2, h3, h4, h5, h6, span, strong, b, pre, a {
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+
+h1 {
+ font-size: 2.2em;
+}
+
+h2 {
+ font-size: 2em;
+}
+
+h6 {
+ font-size: 1em;
+}
+
+ul {
+ list-style-type: none;
+}
+
+a {
+ color: currentColor;
+ text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+ h2 {
+  font-size: 1.5em;
+ }
+
+ h1 {
+  font-size: 1.7em;
+ }
+}
+
+@media screen and (max-width: 425px) {
+ h2 {
+  font-size: 1.2em;
+ }
+
+ h1 {
+  font-size: 1.5em;
+ }
+}
+
+@media screen and (max-width: 425px) {
+ body {
+  gap: 5px !important;
+ }
+}
+

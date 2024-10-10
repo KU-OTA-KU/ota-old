@@ -1,0 +1,57 @@
+.top-popular-animes {
+ width: 100%;
+}
+
+.top-popular-animes .top-popular-animes-inner {
+ padding: 0 10px;
+ width: 100%;
+}
+
+.top-popular-animes-inner .top-popular-animes-tit {
+ max-width: 1500px;
+ margin: 0 auto;
+}
+
+.top-popular-animes-tit .top-popular-animes-title-h2 {
+ margin-bottom: 5px;
+ color: var(--popular-content-title-h2-color);
+}
+
+.top-popular-animes-tit .top-popular-animes-title-h2 h6 {
+ font-weight: normal;
+ color: var(--popular-content-title-h6-color);
+}
+
+.top-popular-animes-content {
+ width: 100%;
+}
+
+.top-popular-animes-content .movie {
+ width: 150px !important;
+ margin-right: 10px;
+ height: 255px !important;
+}
+
+.top-popular-animes-content .movie::after {
+ content: '';
+ display: block;
+ clear: both;
+}
+
+.is-dragging .movie {
+ pointer-events: none;
+}
+
+.top-popular-animes-content::-webkit-scrollbar {
+ height: 0;
+}
+
+
+@media screen and (max-width: 425px) {
+ /*.top-popular-animes-title-h2 h2 {*/
+ /*  display: none;*/
+ /*}*/
+ .top-popular-animes {
+  display: none;
+ }
+}

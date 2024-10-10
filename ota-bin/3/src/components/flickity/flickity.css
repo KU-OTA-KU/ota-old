@@ -1,0 +1,205 @@
+.flickity {
+ width: 100%;
+}
+
+.flickity-inner {
+ width: 100%;
+ margin: 0 auto;
+}
+
+.gallery {
+ background-color: var(--top-slider-gallery-background-color);
+}
+
+.flickity .flickity-viewport {
+ width: 100%;
+}
+
+.flickity .flickity-slider {
+ width: 100%;
+ /* aspect-ratio: 1 / 2;*/
+ display: flex;
+ align-items: center;
+}
+
+.gallery-cell {
+ max-width: 1500px;
+ width: 100%;
+ aspect-ratio: 1 / 0.33;
+ margin: 10px 40px 10px 0;
+ /* background-color: #121212; */
+ border-radius: 8px;
+ background: var(--top-slider-gallery-cell-background-gradient);
+ box-shadow: 0 5px 15px var(--top-slider-gallery-cell-box-shadow-color), 0 -5px 15px var(--top-slider-gallery-cell-box-shadow-color);
+ transition: aspect-ratio 0.2s, filter 0.4s;
+ filter: grayscale(100%);
+}
+
+.gallery-cell.is-selected {
+ aspect-ratio: 1 / 0.34;
+ filter: grayscale(0);
+ margin: 0 40px 0 0;
+}
+
+.flickity-content-gallery-block {
+ width: 100%;
+ position: relative;
+ height: 100%;
+ overflow: hidden;
+ border-radius: 8px;
+ background: var(--top-slider-gallery-cell-content-background-gradiend);
+ box-shadow: 0 5px 15px var(--top-slider-gallery-cell-content-box-shadow-color), 0 -5px 15px var(--top-slider-gallery-cell-content-box-shadow-color);
+}
+
+.gallery-cell-content {
+ position: relative;
+ width: 100%;
+ height: 100%;
+}
+
+.flickity-content-gallery-block .gallery-cell-image {
+ width: 100%;
+ height: 100%;
+ overflow: hidden;
+ position: absolute;
+ display: flex;
+ justify-content: flex-end;
+ z-index: -1;
+ align-items: center;
+ object-fit: cover;
+ object-position: center;
+ /* filter: blur(1px); */
+}
+
+.flickity-content-gallery-block .gallery-cell-image img {
+ width: 65%;
+ object-fit: cover;
+ object-position: center;
+ -webkit-mask-image: var(--top-slider-gallery-cell-content-cell-image-webkit-mask-gradient);
+ opacity: 0;
+ transition: opacity 0.2s ease-in-out;
+}
+
+.gallery-cell-info {
+ width: 100%;
+ height: 100%;
+ padding: 20px 30px;
+ display: flex;
+ font-size: 1.5em;
+ align-items: flex-start;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.flickity-genres-list {
+ display: flex;
+ gap: 10px;
+ align-items: center;
+}
+
+.flickity-genres-list a {
+ padding: 0 !important;
+ margin: 0 !important;
+ border: none !important;
+ border-radius: 0 !important;
+ color: var(--top-slider-gallery-cell-content-genres-link-a-color);
+ white-space: nowrap;
+ text-decoration: underline;
+ transition: color 0.2s ease-in-out;
+}
+
+.top-slider-anime-more-button {
+ transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.gallery-cell:hover .gallery-cell-info .top-slider-anime-more-button {
+ border: 2px solid var(--top-slider-gallery-cell-content-more-button-border-color);
+ color: var(--top-slider-gallery-cell-content-more-button-text-color);
+ border-radius: 30px;
+}
+
+.flickity-genres-list a:hover {
+ color: var(--top-slider-gallery-cell-content-genres-link-a-hover);
+}
+
+.gallery-cell-info h2 {
+ max-width: 60%;
+}
+
+.gallery-cell-info p, .flickity-genres-list {
+ font-size: 0.8em;
+}
+
+.gallery-cell-info p:nth-child(2) {
+ /*color: #4265E9;*/
+ color: var(--top-slider-gallery-cell-content-genres-cell-info-p-color);
+}
+
+.gallery-cell-info p:nth-child(3) {
+ margin-bottom: 5px;
+}
+
+.gallery-cell-info p:nth-child(3) i {
+ margin-left: 5px;
+ color: var(--top-slider-gallery-cell-content-rating-star-color);
+ font-size: 1.1em;
+}
+
+.gallery-cell-info a {
+ padding: 5px 15px;
+ margin: 10px 0;
+ border: 2px solid white;
+ border-radius: 30px;
+ font-size: 0.8em;
+}
+
+.gallery-cell-genres {
+ width: 100%;
+ padding: 10px 0 0 0 ;
+}
+
+.gallery-cell-genres a {
+ padding: 0;
+ margin: 0 10px 0 0;
+ border: 0;
+ border-radius: 0;
+ cursor: pointer;
+ transition: color 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+ .gallery-cell-info h2 {
+  max-width: 80%;
+ }
+}
+
+@media screen and (max-width: 768px) {
+ .gallery-cell {
+  aspect-ratio: 1 / 0.42;
+ }
+
+ .gallery-cell.is-selected {
+  aspect-ratio: 1 / 0.45;
+ }
+
+ .gallery-cell-info p:nth-child(2) {
+  display: none;
+ }
+
+ .gallery-cell-info h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+ }
+}
+
+
+@media screen and (max-width: 425px) {
+ .gallery-cell-info h2 {
+  max-width: 100%;
+ }
+
+ .gallery-cell-genres {
+  display: none;
+ }
+}

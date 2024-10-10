@@ -1,0 +1,16 @@
+{
+    "name": "vendor/animeco",
+    "description": "animeco",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Animeco\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vahe Sargsyan",
+            "email": "w33bv.gl@gmail.com"
+        }
+    ],
+    "require": {}
+}

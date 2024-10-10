@@ -1,0 +1,296 @@
+.anime-background {
+ /* background-color: rgb(29, 231, 73); */
+ width: 100%;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ position: relative;
+}
+
+.anime-background .anime-back-gradient {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background: var(--anime-header-background-back-gradient);
+}
+
+.anime-background .anime-back-content {
+ position: relative;
+ width: 100%;
+ margin-top: 200px;
+ padding: 10px 0;
+}
+
+.anime-back-content .anime-back-content-inner {
+ padding: 0 10px;
+ width: 100%;
+}
+
+.anime-back-content .anime-back-content-tit {
+ margin: 0 auto;
+ max-width: 1300px;
+ width: 100%;
+}
+
+.anime-back-global-info {
+ display: flex;
+ gap: 20px;
+}
+
+.anime-back-panel-left {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ width: 25%;
+}
+
+.anime-back-global-info-image {
+ width: 100%;
+ aspect-ratio: 1 / 1.4;
+ background: var(--anime-header-global-info-image-background-gradient);
+ position: relative;
+ border-radius: 5px;
+ overflow: hidden;
+}
+
+.anime-back-global-info-image img {
+ width: 100%;
+ position: absolute;
+ left: 0;
+ height: 100%;
+ pointer-events: none;
+ object-fit: cover;
+ opacity: 0;
+ transition: 0.3s ease-in-out;
+}
+
+.anime-back-global-info-watch-button {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+}
+
+.anime-back-global-info-watch-button button:nth-child(1) {
+ width: 100%;
+ padding: 10px 0;
+ outline: none;
+ background-color: var(--anime-header-global-info-watch-button-background-color);
+ color: white;
+ border: 2px solid var(--anime-header-global-info-watch-button-border-color);
+ cursor: pointer;
+ transition: background-color 0.2s;
+ white-space: nowrap;
+}
+
+.anime-back-global-info-watch-button button:nth-child(1) i {
+ font-size: 1.2em;
+ margin-right: 10px;
+}
+
+.anime-back-global-info-watch-button button:nth-child(1):hover {
+ border-color: var( --anime-header-global-info-watch-button-border-color-hover);
+ background-color: var(--anime-header-global-info-watch-button-background-color-hover);
+}
+
+.anime-back-global-info-watch-button button:nth-child(2) {
+ width: 100%;
+ padding: 10px 0;
+ outline: none;
+ border: none;
+ background-color: var(--anime-header-global-info-report-button-background-color);
+ color: var(--anime-header-global-info-report-button-text-color);
+ cursor: pointer;
+ transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+ white-space: nowrap;
+}
+
+.anime-back-global-info-watch-button button:nth-child(2):hover {
+ background-color: var(--anime-header-global-info-report-button-background-color-hover);
+ color: var(--anime-header-global-info-report-button-text-color-hover);
+}
+
+.anime-back-global-info-watch-button button:nth-child(2) i {
+ font-size: 1.2em;
+ margin-right: 10px;
+ color: yellow;
+}
+
+.anime-back-global-current-anime-information {
+ width: 75%;
+}
+
+.anime-eng-jpg-name {
+ margin-top: 20px;
+ display: flex;
+ height: 20px !important;
+ border-radius: 4px;
+ color: var(--anime-header-global-info-status-text-color);
+ align-items: center;
+ justify-content: space-between;
+ gap: 5px;
+ font-size: 0.9em;
+ margin-bottom: 3px;
+}
+
+.anime-eng-jpg-name p:nth-child(1) {
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+.anime-eng-jpg-name p:nth-child(2) {
+ white-space: nowrap
+}
+
+.anime-title-h2 {
+ display: flex;
+ min-width: 50%;
+ min-height: 47px;
+ border-radius: 4px;
+ align-items: center;
+ justify-content: flex-start;
+ gap: 5px;
+ margin-bottom: 3px;
+ /*display: -webkit-box;*/
+ /*-webkit-line-clamp: 3;*/
+ /*-webkit-box-orient: vertical;*/
+ /*overflow: hidden;*/
+}
+
+.anime-title-h2 h2 {
+ user-select: auto;
+}
+
+.anime-score {
+ display: flex;
+ height: 20px !important;
+ border-radius: 4px;
+ font-size: 1em;
+ color: var(--status-font-color);
+ align-items: center;
+ justify-content: space-between;
+ gap: 5px;
+}
+
+.anime-score p:nth-child(1) {
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+.anime-score p:nth-child(1) i {
+ font-size: 1.2em;
+ margin-right: 10px;
+ color: orange;
+}
+
+.anime-score-genres {
+ display: flex;
+ gap: 20px;
+ align-items: center;
+}
+
+.anime-genres-list {
+ align-items: center;
+ min-height: 21px;
+ display: flex;
+ border-radius: 4px;
+ font-size: 1em;
+ overflow: hidden;
+ color: var(--anime-header-global-info-genres-list-text-color);
+ gap: 10px;
+}
+
+.anime-genres-list a {
+ transition: color 0.2s ease-in-out;
+ white-space: nowrap;
+ text-decoration: underline;
+}
+
+.anime-genres-list a:hover {
+ color: var(--anime-header-global-info-genres-list-text-color-hover);
+}
+@media screen and (max-width: 1440px) {
+ /*.anime-about p {*/
+ /* -webkit-line-clamp: 5 !important;*/
+ /*}*/
+}
+
+@media screen and (max-width: 1024px) {
+ /*.anime-background {*/
+ /*  min-height: 661px !important;*/
+ /*}*/
+ /*.anime-title-h2 {*/
+ /* -webkit-line-clamp: 2 !important;*/
+ /*}*/
+}
+
+@media screen and (max-width: 768px) {
+ /*.anime-background {*/
+ /*  min-height: 1231px !important;*/
+ /*}*/
+ .anime-eng-jpg-name {
+  margin: 0 0 3px 0;
+ }
+
+ /* tranformerrrrniii */
+ .anime-back-global-info {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .anime-back-panel-left {
+  width: 60%;
+ }
+
+ .anime-back-global-current-anime-information {
+  width: 98%;
+ }
+
+ /*.anime-back-content {*/
+ /*  margin-top: 400px !important;*/
+ /*}*/
+}
+
+@media screen and (max-width: 600px) {
+ /*.anime-background {*/
+ /*  min-height: 1100px !important;*/
+ /*}*/
+ .anime-back-panel-left {
+  width: 60%;
+ }
+
+ .anime-back-content {
+  margin-top: 200px !important;
+ }
+}
+
+@media screen and (max-width: 500px) {
+ /*.anime-background {*/
+ /*  min-height: 1016px !important;*/
+ /*}*/
+}
+
+@media screen and (max-width: 425px) {
+ .anime-back-content {
+  margin-top: 100px !important;
+ }
+
+ .anime-title-h2 {
+  min-height: 31px;
+ }
+
+ /*.anime-background {*/
+ /*  min-height: 853px !important;*/
+ /*}*/
+ .anime-about {
+  text-align: center;
+ }
+}
+
+@media screen and (max-width: 375px) {
+ /*.anime-background {*/
+ /*  min-height: 911px !important;*/
+ /*}*/
+}

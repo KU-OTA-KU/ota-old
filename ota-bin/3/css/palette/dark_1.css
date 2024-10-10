@@ -1,0 +1,111 @@
+:root {
+ /* Global */
+ --body-background-color: #14171A;
+ --body-font-color: white;
+ /* Header */
+ --header-background-color: #0C1013;
+ --header-box-shadow-color: rgba(0, 0, 0, .91);
+ --header-navigation-link-color: #c6c6c6;
+ --header-navigation-link-color-hover: white;
+ --header-search-form-backgorund-color: #151919;
+ --header-search-form-box-shadow-color: rgba(0, 0, 0, 0.1);
+ --header-search-form-border-color: rgba(6, 6, 6, .2);
+ --header-search-form-hover-border-color: #1976d2;
+ --header-search-form-button-color: white;
+ --header-search-form-button-hover-color: #1976d2;
+ --header-search-form-input-placeholder-color: white;
+ /* top Slider */
+ --top-slider-gallery-background-color: #1F2326;
+ --top-slider-gallery-cell-background-gradient: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 32%, rgba(31, 35, 38, 0.6334908963585435) 100%);
+ --top-slider-gallery-cell-box-shadow-color: rgba(0, 0, 0, 0.1);
+ --top-slider-gallery-cell-content-background-gradiend: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 32%, rgba(31, 35, 38, 0.6334908963585435) 100%);
+ --top-slider-gallery-cell-content-box-shadow-color: rgba(0, 0, 0, 0.1);
+ --top-slider-gallery-cell-content-cell-image-webkit-mask-gradient: linear-gradient(269deg, rgb(0 0 0) 77%, rgb(255 255 255 / 0%) 100%);
+ --top-slider-gallery-cell-content-more-button-border-color: #2786e4;
+ --top-slider-gallery-cell-content-more-button-text-color: #2786e4;
+ --top-slider-gallery-cell-content-genres-link-a-hover: white;
+ --top-slider-gallery-cell-content-genres-link-a-color: rgb(185, 185, 185);
+ --top-slider-gallery-cell-content-genres-cell-info-p-color: white;
+ --top-slider-gallery-cell-content-rating-star-color: yellow;
+ /* Genres list */
+ --genres-genres-list-container-background-color: rgba(255, 255, 255, 0.05);
+ --genres-genres-list-container-text-color: white;
+ --genres-genres-list-container-background-hover-color: rgba(255, 255, 255, 1);
+ --genres-genres-list-container-text-hover-color: black;
+ /* Most list */
+ --most-content-title-h2-color: #ececec;
+ --most-content-movie-border-bottom: rgba(255, 255, 255, 0.07);
+ --most-content-movie-name-hover: #2786e4;
+ --most-content-movie-content-image-background-gradient: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 40%, rgba(255, 255, 255, 0.09) 100%);
+ --most-content-movie-most-name-background-gradient: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 40%, rgba(255, 255, 255, 0.09) 100%);
+ --most-content-movie-most-status-background-gradient: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 40%, rgba(255, 255, 255, 0.09) 100%);
+ --most-content-movie-status-text-color: #B9b9b9;
+ --most-content-movie-most-data-background-gradient: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 40%, rgba(255, 255, 255, 0.09) 100%);
+ /* Popular */
+ --popular-content-title-h2-color: #ececec;
+ --popular-content-title-h6-color: #B9b9b9;
+ /* Filter */
+ --filter-filter-clear-button: white;
+ --filter-filter-background-color: #14171A;
+ --filter-filter-clear-button-hover: rgba(255, 255, 255, 0.09);
+ --filter-filter-select-background-color: #0C1013;
+ --filter-filter-genre-box-color: #1F2326;
+ --filter-filter-custom-select-title-color: rgba(255, 255, 255, 0.8);
+ --filter-filter-custom-select-title-background-color: #1E1F22;
+ --filter-filter-custom-select-options-background-color: #1E1F22;
+ --filter-filter-query-background-color: #1F2326;
+ --filter-filter-filt-button: rgba(25, 118, 210, 0.80);
+ --filter-filter-filt-button-hover: rgba(39, 134, 228, 0.80);
+ --filter-filter-search-button-color: #2786e4;
+ --filter-filter-search-button-border-color: transparent;
+ --filter-filter-search-button-hover-color: transparent;
+ --filter-filter-search-button-border-hover-color: #2786e4;
+ /* Content */
+ --content-movie-name-color-hover: #2786e4;
+ --content-movie-hover-rating-star-color: yellow;
+ --content-movie-movie-image-background-gradient: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 40%, rgba(255, 255, 255, 0.09) 100%);
+ --content-movie-status-color: #b9b9b9;
+ --content-movie-movie-status-background-gradient: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 40%, rgba(255, 255, 255, 0.09) 100%);
+ --content-movie-movie-name-background-gradient: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 40%, rgba(255, 255, 255, 0.09) 100%);
+ /* Footer */
+ --footer-background-color: #1F2326;
+ --footer-border-top-color: rgba(255, 255, 255, 0.12);
+ --footer-text-color: #b9b9b9;
+ --footer-span-color: white;
+ --footer-copyright-a-color: #2786e4;
+ --footer-copyright-a-color-hover: white;
+ --footer-documents-a-color-hover: white;
+ /* Anime header*/
+ --anime-header-background-back-gradient: linear-gradient(0deg, rgb(20 23 26) 0%, rgb(20 23 26 / 99%) 50%, rgb(20 23 26 / 66%) 100%);
+ --anime-header-global-info-image-background-gradient: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 40%, rgba(255, 255, 255, 0.09) 100%);
+ --anime-header-global-info-watch-button-background-color: #2786E4;
+ --anime-header-global-info-watch-button-border-color: transparent;
+ --anime-header-global-info-watch-button-background-color-hover: transparent;
+ --anime-header-global-info-watch-button-border-color-hover: #2786E4;
+ --anime-header-global-info-report-button-background-color: transparent;
+ --anime-header-global-info-report-button-text-color: white;
+ --anime-header-global-info-report-button-background-color-hover: white;
+ --anime-header-global-info-report-button-text-color-hover: black;
+ --anime-header-global-info-status-text-color: #b9b9b9;
+ --anime-header-global-info-genres-list-text-color: #b9b9b9;
+ --anime-header-global-info-genres-list-text-color-hover: white;
+ /* Anime Stills */
+ --stills-anime-content-background-color: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 40%, rgba(255, 255, 255, 0.09) 100%);
+ --stills-anime-title-h6-color: #b9b9b9;
+ /* Anime Related */
+ --related-anime-title-h6-color: #b9b9b9;
+ --related-anime-content-name-background-color: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 40%, rgba(255, 255, 255, 0.09) 100%);
+ --related-anime-content-image-background-color: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 40%, rgba(255, 255, 255, 0.09) 100%);
+ --related-anime-content-type-and-year-background-color: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 40%, rgba(255, 255, 255, 0.09) 100%);
+ /* Anime Characters list*/
+ --characters-anime-title-h6-color: #b9b9b9;
+ --characters-anime-content-img-background-gradient: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 40%, rgba(255, 255, 255, 0.09) 100%);
+ --characters-anime-content-p-background-color: linear-gradient(90deg, rgba(31, 35, 38, 1) 0%, rgba(31, 35, 38, 1) 40%, rgba(255, 255, 255, 0.09) 100%);
+/* Player */
+ --player-background-color: #0C1013;
+/* what-is-anime */
+ --what-is-anime-container-h1-color: #2786e4;
+ --what-is-anime-container-h1-color-hover: #2786e4;
+ --what-is-anime-social-item-2-hover-color-youtube: #FB0000;
+ --what-is-anime-social-item-3-hover-color-telegram: #279EDA;
+}
