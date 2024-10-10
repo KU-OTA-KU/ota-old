@@ -1,0 +1,39 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@popperjs/core": "^2.11.6",
+        "@vitejs/plugin-vue": "^4.5.0",
+        "axios": "^1.6.4",
+        "bootstrap": "^5.2.3",
+        "laravel-vite-plugin": "^1.0.0",
+        "sass": "^1.56.1",
+        "vite": "^5.0.0",
+        "vue": "^3.2.37"
+    },
+    "name": "ota-ku",
+    "description": "composer create-project laravel/laravel ota-ku",
+    "version": "1.0.0",
+    "main": "vite.config.js",
+    "directories": {
+        "test": "tests"
+    },
+    "author": "vahe",
+    "license": "ISC",
+    "dependencies": {
+        "@mdi/font": "^7.4.47",
+        "@vueuse/head": "^2.0.0",
+        "flickity": "^3.0.0",
+        "moment": "^2.30.1",
+        "moment-timezone": "^0.5.45",
+        "v-selectui": "^1.0.5",
+        "vue-cookies": "^1.8.4",
+        "vue-lazyload": "^3.0.0",
+        "vue-router": "^4.3.2",
+        "vuetify": "^3.6.0-beta.0.0"
+    }
+}

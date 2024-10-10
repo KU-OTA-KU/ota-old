@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /anime
+Allow: /catalog
+Disallow: /error
+Disallow: /404
+Disallow: /privacyPolicy
+
+User-agent: Yandex
+Disallow: /anime
+Allow: /catalog
+Disallow: /error
+Disallow: /404
+Disallow: /privacyPolicy
+
+User-agent: Googlebot
+Disallow: /anime
+Allow: /catalog
+Disallow: /error
+Disallow: /404
+Disallow: /privacyPolicy
+
+Sitemap: https://ota-ku.ru/sitemap.xml
+Sitemap: https://ota-ku.ru/sitemap_anime.xml
